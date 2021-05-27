@@ -1,0 +1,14 @@
+﻿
+@{
+    var prd = (ProductModel)ViewData["products"];
+    Layout = "_LayoutDesign";
+}
+
+<div class="card" style="width: 20rem; text-align:center ; margin:auto ;margin-top:30px;">
+    <img class="card-img-top" src="@prd.Image" alt="Card image cap" width="200px" height="250px" >
+    <div class="card-body">
+        <h5 class="card-title">@prd.Id : @prd.Title</h5>
+        <p class="card-text"> @prd.Price</p>
+        <a href="/Products" class="btn btn-primary">Go To Products</a>
+    </div>
+</div>
